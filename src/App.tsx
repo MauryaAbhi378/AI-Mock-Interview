@@ -2,10 +2,12 @@ import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 
 import PublicLayout from "./layout/public-layout";
 import AuthLayout from "./layout/auth-layout";
+import MainLayout from "./layout/main-layout";
+import ProtectedRoutes from "./layout/protected-routes";
 
-import HomePage from "./routes/home";
-import SignInPage from "./routes/sign-in";
-import SignUpPage from "./routes/sign-up";
+import HomePage from "./pages/home";
+import SignInPage from "./pages/sign-in";
+import SignUpPage from "./pages/sign-up";
 
 function App() {
   return (
@@ -23,6 +25,16 @@ function App() {
         </Route>
 
         {/* Protected Route*/}
+        <Route
+          element={
+            <ProtectedRoutes>
+              <MainLayout />
+            </ProtectedRoutes>
+          }
+        >
+        {/* Add all the Protected Route */}
+
+        </Route>
       </Routes>
     </Router>
   );
