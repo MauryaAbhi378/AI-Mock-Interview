@@ -3,6 +3,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
+.text-outline {
+  color: white;
+  text-shadow: -1px -1px 0px rgba(0, 0, 0, 0.6), 1px -1px 0px rgba(0, 0, 0, 0.6),
+    -1px 1px 0px rgba(0, 0, 0, 0.6), 1px 1px 0px rgba(0, 0, 0, 0.6);
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
