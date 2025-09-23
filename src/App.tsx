@@ -8,6 +8,9 @@ import ProtectedRoutes from "./layout/protected-routes";
 import HomePage from "./pages/home";
 import SignInPage from "./pages/sign-in";
 import SignUpPage from "./pages/sign-up";
+import Generate from "./pages/generate";
+import Dashboard from "./components/dashboard";
+import CreateEditPage from "./pages/create-edit-page";
 
 function App() {
   return (
@@ -32,8 +35,11 @@ function App() {
             </ProtectedRoutes>
           }
         >
-        {/* Add all the Protected Route */}
-
+          {/* Add all the Protected Route */}
+          <Route element={<Generate />} path="/generate">
+            <Route index element={<Dashboard />} />
+            <Route path=":interviewId" element={<CreateEditPage/>} />
+          </Route>
         </Route>
       </Routes>
     </Router>
