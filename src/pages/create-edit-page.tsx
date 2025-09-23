@@ -1,4 +1,4 @@
-import FormMockInterview from "@/components/form-mock-interview";
+import { FormMockInterview } from "@/components/form-mock-interview";
 import { db } from "@/config/firebase.config";
 import type { Interview } from "@/types";
 import { doc, getDoc } from "firebase/firestore";
@@ -14,12 +14,14 @@ const CreateEditPage = () => {
       if (interviewId) {
         try {
           const interviewDoc = await getDoc(doc(db, "interviews", interviewId));
-
-          if (interviewDoc) {
-            setInterview({ ...interviewDoc.data() } as Interview);
+          if (interviewDoc.exists()) {
+            setInterview({
+              id: interviewDoc.id,
+              ...interviewDoc.data(),
+            } as Interview);
           }
-        } catch (err) {
-          console.log("Error while fetching Interview", err);
+        } catch (error) {
+          console.log(error);
         }
       }
     };
