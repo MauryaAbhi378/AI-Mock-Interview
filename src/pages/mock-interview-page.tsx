@@ -6,7 +6,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "@/config/firebase.config";
 import CustomBreadCrumb from "@/components/custom-bread-crumb";
 
-import { Alert, AlertDescription, AlertTitle } from "src/components/ui/alert";
+import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { Lightbulb } from "lucide-react";
 import  { QuestionSection } from "@/components/question-section";
 
