@@ -121,7 +121,6 @@ export const FormMockInterview = ({ initialData }: FormMockInterviewProps) => {
         `;
 
     const aiResult = await chatSession.sendMessage(prompt);
-    console.log(aiResult.response.text().trim())
     const cleanedResponse = cleanAiResponse(aiResult.response.text());
 
     return cleanedResponse;

@@ -11,6 +11,9 @@ import SignUpPage from "./pages/sign-up";
 import Generate from "./pages/generate";
 import Dashboard from "./components/dashboard";
 import CreateEditPage from "./pages/create-edit-page";
+import MockLoadPage from "./pages/mock-load-page";
+import MockInterviewPage from "./pages/mock-interview-page";
+import Feedback from "./pages/feedback";
 
 function App() {
   return (
@@ -39,6 +42,9 @@ function App() {
           <Route element={<Generate />} path="/generate">
             <Route index element={<Dashboard />} />
             <Route path=":interviewId" element={<CreateEditPage/>} />
+            <Route path="interview/:interviewId" element={<MockLoadPage/>} />
+            <Route path="interview/:interviewId/start" element={<MockInterviewPage/>} />
+            <Route path="feedback/:interviewId" element={<Feedback/>} />
           </Route>
         </Route>
       </Routes>
