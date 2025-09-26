@@ -6,8 +6,11 @@ import path from "path";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   resolve: {
+
     alias: [
       { find: "src", replacement: path.resolve(__dirname, "src") }
     ]
   }
 });
+
+
