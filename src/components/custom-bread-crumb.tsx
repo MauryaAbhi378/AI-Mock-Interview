@@ -6,7 +6,7 @@ import {
   BreadcrumbList,
   BreadcrumbPage,
   BreadcrumbSeparator,
-} from "src/components/ui/breadcrumb";
+} from "@/components/ui/breadcrumb";
 import { Home } from "lucide-react";
 import { Link } from "react-router-dom";
 

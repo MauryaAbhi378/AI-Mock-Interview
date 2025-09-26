@@ -1,4 +1,4 @@
-import { Toaster } from "src/components/ui/sonner";
+import { Toaster } from "@/components/ui/sonner";
 
 export const ToastProvider = () => {
   return (

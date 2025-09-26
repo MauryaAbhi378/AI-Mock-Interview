@@ -1,5 +1,5 @@
-import { db } from "src/config/firebase.config";
-import type { Interview, UserAnswer } from "src/types";
+import { db } from "@/config/firebase.config";
+import type { Interview, UserAnswer } from "@/types";
 import { useAuth } from "@clerk/clerk-react";
 import {
   collection,
@@ -12,9 +12,9 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
-import CustomBreadCrumb from "src/components/custom-bread-crumb";
-import Headings from "src/components/headings";
-import InterviewPin from "src/components/pin";
+import CustomBreadCrumb from "@/components/custom-bread-crumb";
+import Headings from "@/components/headings";
+import InterviewPin from "@/components/pin";
 import {
   Accordion,
   AccordionContent,

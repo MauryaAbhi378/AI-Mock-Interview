@@ -1,13 +1,13 @@
-import type { Interview } from "src/types";
+import type { Interview } from "@/types";
 import { useNavigate } from "react-router-dom";
 import {
   Card,
   CardDescription,
   CardFooter,
   CardTitle,
-} from "src/components/ui/card";
+} from "@/components/ui/card";
 import { Badge } from "./ui/badge";
-import { cn } from "src/lib/utils";
+import { cn } from "@/lib/utils";
 import { TooltipButton } from "./tooltip-button";
 import { Eye, Newspaper, Sparkles } from "lucide-react";
 

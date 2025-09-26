@@ -26,7 +26,7 @@ import {
   serverTimestamp,
   where,
 } from "firebase/firestore";
-import { db } from "src/config/firebase.config";
+import { db } from "@/config/firebase.config";
 
 interface RecordAnswerProps {
   question: { question: string; answer: string };

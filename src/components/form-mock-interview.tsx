@@ -2,7 +2,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm, type Resolver } from "react-hook-form";
 
-import type { Interview } from "src/types";
+import type { Interview } from "@/types";
 
 import CustomBreadCrumb from "./custom-bread-crumb";
 import { useEffect, useState } from "react";

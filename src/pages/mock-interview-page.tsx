@@ -1,10 +1,10 @@
-import type { Interview } from "src/types";
+import type { Interview } from "@/types";
 import { useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import LoaderPage from "./loader";
 import { doc, getDoc } from "firebase/firestore";
-import { db } from "src/config/firebase.config";
-import CustomBreadCrumb from "src/components/custom-bread-crumb";
+import { db } from "@/config/firebase.config";
+import CustomBreadCrumb from "@/components/custom-bread-crumb";
 
 import { Alert, AlertDescription, AlertTitle } from "src/components/ui/alert";
 import { Lightbulb } from "lucide-react";
