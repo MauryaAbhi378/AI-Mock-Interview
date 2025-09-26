@@ -16,7 +16,7 @@ import { useParams } from "react-router-dom";
 import WebCam from "react-webcam";
 import { TooltipButton } from "./tooltip-button";
 import { toast } from "sonner";
-import { chatSession } from "@/scripts";
+import { chatSession } from "scripts";
 import SaveModal from "./save-modal";
 import {
   addDoc,
@@ -26,7 +26,7 @@ import {
   serverTimestamp,
   where,
 } from "firebase/firestore";
-import { db } from "@/config/firebase.config";
+import { db } from "config/firebase.config";
 
 interface RecordAnswerProps {
   question: { question: string; answer: string };

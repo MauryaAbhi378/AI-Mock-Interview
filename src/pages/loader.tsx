@@ -1,4 +1,4 @@
-import { cn } from "@/lib/utils";
+import { cn } from "lib/utils";
 import { Loader } from "lucide-react";
 
 const LoaderPage = ({ className }: { className?: string }) => {

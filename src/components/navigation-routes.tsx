@@ -1,6 +1,6 @@
 import { NavLink } from "react-router-dom";
-import { cn } from "@/lib/utils";
-import MainRoutes from "@/lib/helper";
+import { cn } from "lib/utils";
+import MainRoutes from "lib/helper";
 
 interface NavigationRouteProps {
   isMobile?: boolean;

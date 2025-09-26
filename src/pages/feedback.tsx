@@ -1,5 +1,5 @@
-import { db } from "@/config/firebase.config";
-import type { Interview, UserAnswer } from "@/types";
+import { db } from "config/firebase.config";
+import type { Interview, UserAnswer } from "types";
 import { useAuth } from "@clerk/clerk-react";
 import {
   collection,
@@ -12,18 +12,18 @@ import {
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { toast } from "sonner";
-import CustomBreadCrumb from "@/components/custom-bread-crumb";
-import Headings from "@/components/headings";
-import InterviewPin from "@/components/pin";
+import CustomBreadCrumb from "components/custom-bread-crumb";
+import Headings from "components/headings";
+import InterviewPin from "components/pin";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
-import { cn } from "@/lib/utils";
+} from "components/ui/accordion";
+import { cn } from "lib/utils";
 import { CircleCheck, Star } from "lucide-react";
-import { Card, CardDescription, CardTitle } from "@/components/ui/card";
+import { Card, CardDescription, CardTitle } from "components/ui/card";
 import LoaderPage from "./loader";
 
 const Feedback = () => {

@@ -1,7 +1,7 @@
 import { useAuth } from "@clerk/clerk-react";
 import { NavLink } from "react-router-dom";
 
-import { cn } from "@/lib/utils";
+import { cn } from "lib/utils";
 import Container from "./container";
 import LogoContainer from "./logo-container";
 import NavigationRoutes from "./navigation-routes";

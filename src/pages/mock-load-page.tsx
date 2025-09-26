@@ -1,14 +1,14 @@
-import { db } from "@/config/firebase.config";
-import type { Interview } from "@/types";
+import { db } from "config/firebase.config";
+import type { Interview } from "types";
 import { doc, getDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import LoaderPage from "./loader";
-import CustomBreadCrumb from "@/components/custom-bread-crumb";
-import { Button } from "@/components/ui/button";
+import CustomBreadCrumb from "components/custom-bread-crumb";
+import { Button } from "components/ui/button";
 import { Lightbulb, Sparkles, WebcamIcon } from "lucide-react";
-import InterviewPin from "@/components/pin";
-import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import InterviewPin from "components/pin";
+import { Alert, AlertDescription, AlertTitle } from "components/ui/alert";
 import WebCam from "react-webcam";
 
 const MockLoadPage = () => {
