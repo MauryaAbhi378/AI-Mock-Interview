@@ -20,10 +20,10 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "src/components/ui/accordion";
-import { cn } from "src/lib/utils";
+} from "@/components/ui/accordion";
+import { cn } from "@/lib/utils";
 import { CircleCheck, Star } from "lucide-react";
-import { Card, CardDescription, CardTitle } from "src/components/ui/card";
+import { Card, CardDescription, CardTitle } from "@/components/ui/card";
 import LoaderPage from "./loader";
 
 const Feedback = () => {
