@@ -22,7 +22,7 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { chatSession } from "src/scripts";
+import { chatSession } from "@/scripts";
 import {
   addDoc,
   collection,
@@ -30,7 +30,7 @@ import {
   serverTimestamp,
   updateDoc,
 } from "firebase/firestore";
-import { db } from "src/config/firebase.config";
+import { db } from "@/config/firebase.config";
 
 interface FormMockInterviewProps {
   initialData: Interview | null;
