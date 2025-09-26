@@ -2,7 +2,7 @@ import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { FormProvider, useForm, type Resolver } from "react-hook-form";
 
-import type { Interview } from "types";
+import type { Interview } from "src/types";
 
 import CustomBreadCrumb from "./custom-bread-crumb";
 import { useEffect, useState } from "react";
@@ -22,7 +22,7 @@ import {
 } from "./ui/form";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
-import { chatSession } from "scripts";
+import { chatSession } from "src/scripts";
 import {
   addDoc,
   collection,
@@ -30,7 +30,7 @@ import {
   serverTimestamp,
   updateDoc,
 } from "firebase/firestore";
-import { db } from "config/firebase.config";
+import { db } from "src/config/firebase.config";
 
 interface FormMockInterviewProps {
   initialData: Interview | null;

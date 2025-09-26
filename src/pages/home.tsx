@@ -1,6 +1,6 @@
-import Container from "components/container";
-import { MarqueImg } from "components/marquee-img";
-import { Button } from "components/ui/button";
+import Container from "src/components/container";
+import { MarqueImg } from "src/components/marquee-img";
+import { Button } from "src/components/ui/button";
 import { Sparkles } from "lucide-react";
 import Marquee from "react-fast-marquee";
 import { Link } from "react-router-dom";

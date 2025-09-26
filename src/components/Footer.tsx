@@ -3,7 +3,7 @@ import React from "react";
 import { Facebook, Twitter, Instagram, Linkedin } from "lucide-react"; // Import Lucide icons
 import { Link } from "react-router-dom";
 import Container from "./container";
-import MainRoutes from "lib/helper";
+import MainRoutes from "src/lib/helper";
 
 interface SocialLinkProps {
   href: string;
