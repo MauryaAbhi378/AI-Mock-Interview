@@ -3,8 +3,8 @@ import {
   TooltipContent,
   TooltipProvider,
   TooltipTrigger,
-} from "components/ui/tooltip";
-import { Button } from "components/ui/button";
+} from "src/components/ui/tooltip";
+import { Button } from "src/components/ui/button";
 import { Loader } from "lucide-react";
 
 // assuming the button variants types are something like following

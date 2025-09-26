@@ -1,10 +1,10 @@
 import Headings from "./headings";
 import InterviewPin from "./pin";
-import { Button } from "components/ui/button";
-import { Separator } from "components/ui/separator";
-import { Skeleton } from "components/ui/skeleton";
-import { db } from "config/firebase.config";
-import type { Interview } from "types";
+import { Button } from "src/components/ui/button";
+import { Separator } from "src/components/ui/separator";
+import { Skeleton } from "src/components/ui/skeleton";
+import { db } from "src/config/firebase.config";
+import type { Interview } from "src/types";
 import { useAuth } from "@clerk/clerk-react";
 import { collection, onSnapshot, query, where } from "firebase/firestore";
 import { Plus } from "lucide-react";

@@ -1,5 +1,5 @@
-import { Sheet, SheetContent, SheetTrigger } from "components/ui/sheet";
-import { cn } from "lib/utils"
+import { Sheet, SheetContent, SheetTrigger } from "src/components/ui/sheet";
+import { cn } from "src/lib/utils"
 import { Menu } from "lucide-react";
 import { NavLink } from "react-router-dom";
 import NavigationRoutes from "./navigation-routes";

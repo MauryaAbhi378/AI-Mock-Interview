@@ -1,4 +1,4 @@
-import LoaderPage from "pages/loader";
+import LoaderPage from "src/pages/loader";
 import { useAuth } from "@clerk/clerk-react";
 import { Navigate } from "react-router-dom";
 

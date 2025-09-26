@@ -1,6 +1,6 @@
-import { db } from "config/firebase.config";
-import LoaderPage from "pages/loader";
-import type { User } from "types";
+import { db } from "src/config/firebase.config";
+import LoaderPage from "src/pages/loader";
+import type { User } from "src/types";
 import { useAuth, useUser } from "@clerk/clerk-react";
 import { doc, getDoc, serverTimestamp, setDoc } from "firebase/firestore";
 import { useEffect, useState } from "react";
