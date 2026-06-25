@@ -1,69 +1,72 @@
-# React + TypeScript + Vite
+## 🎯 AI Mock Interview Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An AI-powered fullstack mock interview platform where users can simulate real interview experiences.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+👤 Create Interview: Users can create a new interview session.
 
-## Expanding the ESLint configuration
+🎤 Answer Recording: Record answers using camera + microphone directly from the browser.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+💾 Save Responses: Store responses securely.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+🤖 AI Feedback:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+- Get a rating for each answer
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- View the expected ideal answer
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- Receive personalized feedback & improvement tips
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🛠️ Tech Stack
+## Frontend
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+⚛️ React (TypeScript)
+
+🎨 Tailwind CSS / Shadcn UI
+
+🎥 Web APIs for camera & microphone access
+
+🔑 Clerk (Authentication & User Management)
+
+## Backend
+
+🔥 Firebase
+
+Firestore (database for responses & feedback)
+
+## AI Layer
+
+🤖 Google Gemini for:
+
+Answer evaluation
+
+Feedback generation
+
+Rating system
+
+## 1. Home Page 
+
+![Image](https://github.com/user-attachments/assets/8455ada8-e835-4f0b-b075-ca5001be8f10)
+
+## Dashboard Page
+
+![Image](https://github.com/user-attachments/assets/10d1c61b-5444-4425-bbdd-eef99b7a4e17)
+
+## Create Mock Interview
+
+![Image](https://github.com/user-attachments/assets/8711d96d-3135-49c2-8128-5c7c20caeef1)
+
+## Start Interview
+
+The camera icon is for enabling camera, mike icon for recording the answer, refresh icon for new answer to record and save icon for saving answer from which AI evaluate the user answer and give feedback and rating
+
+![Image](https://github.com/user-attachments/assets/78116b84-8c24-4480-bc58-0ab6e3cf3051)
+
+## Feedback Page
+
+![Image](https://github.com/user-attachments/assets/530deda9-114c-4437-bd2e-c2aeb45fea4f)
+
+## Feedback and rating 
+
+![Image](https://github.com/user-attachments/assets/ab96e42a-8d34-46fe-9e68-91e1924e71b4)
